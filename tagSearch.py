@@ -12,7 +12,7 @@ def find_related_tags(given_tag):
       weight=G[given_tag][ele]['weight']
       neigh_weighted.append([ele,weight])
     # sort according to weights
-    sorted_neigh=sorted(neigh_weighted,key=lambda x:x[1])
+    sorted_neigh=sorted(neigh_weighted,key=lambda x:x[1],reverse=True)
     list_of_related_tags=[]
 
     # get the tag list
